@@ -1,0 +1,25 @@
+{
+  "agreements": [
+    {
+      "id": "1",
+      "employeeName": "visvam TR",
+      "department": "Engineering",
+      "position": "Web Developer",
+      "agreementDate": "2024-07-06"
+    },
+    {
+      "id": "e15e",
+      "employeeName": "Sathiya HariHaran S",
+      "department": "Operation",
+      "position": "Business Development",
+      "agreementDate": "2024-07-20"
+    },
+    {
+      "id": "9c9e",
+      "employeeName": "Yogeshwaran MS",
+      "department": "Engineering",
+      "position": "Web Developer",
+      "agreementDate": "2024-07-13"
+    }
+  ]
+}
