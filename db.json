@@ -6,6 +6,20 @@
       "department": "Engineering",
       "position": "UI Developer",
       "agreementDate": "2024-07-06"
+    },
+    {
+      "id": "02fd",
+      "employeeName": "Yogeshwaran MS",
+      "department": "Engineering",
+      "position": "full stack developer",
+      "agreementDate": "2024-07-12"
+    },
+    {
+      "id": "2879",
+      "employeeName": "Arjun TSK",
+      "department": "Operation",
+      "position": "Technical Support",
+      "agreementDate": "2024-07-13"
     }
   ]
 }

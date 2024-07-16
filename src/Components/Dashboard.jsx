@@ -7,7 +7,7 @@ import ActionMenu from './ActionMenu';
 // creating the function called Dashboarad
 const Dashboard = () => {
     
-    // created the varible for accessing the josn agreenent and setAgreement function for giving functionalities to user datas.
+    // created the varible for accessing the json agreenent and setAgreement function for giving functionalities to user datas.
     const [agreements, setAgreements] = useState([]);
 
     //created the useeffect function inside that calling the fetch agreement function.
@@ -60,7 +60,7 @@ const Dashboard = () => {
                     <TableCell>{agreement.position}</TableCell>
                     <TableCell>{agreement.agreementDate}</TableCell>
                     <TableCell>
-                        {/* ActionMenu is a component consumer to for view, update and delete features */}
+                        {/* ActionMenu is a component consumed for view, update and delete features access */}
                         <ActionMenu agreement={agreement} handleDelete={handleDelete} />
                     </TableCell>
                     </TableRow>
