@@ -30,7 +30,7 @@ const CreateAgreement = () => {
     // Whenever we hit the submit button, handlesubmit will called and it will post the data to json file and then navigate to the dashboard.
     const handlesubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:5000/agreements', formData)
+        axios.post('https://json-server-dx4r.onrender.com/agreements', formData)
         .then(() => navigate('/'))
         .catch(error => console.error(error));
     };

@@ -22,7 +22,7 @@ const UpdateAgreement = () => {
 
   useEffect(() => {
      // axios.get is help us to get the employee details from the json
-    axios.get(`http://localhost:5000/agreements/${id}`)
+    axios.get(`https://json-server-dx4r.onrender.com/agreements/${id}`)
       .then(response => setFormData(response.data))
       .catch(error => console.error(error));
   }, [id]);
@@ -40,7 +40,7 @@ const UpdateAgreement = () => {
   // Whenever we hit the submit button, handlesubmit will called and it will put the previous data to update form and then navigate to the dashboard.
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost:5000/agreements/${id}`, formData)
+    axios.put(`https://json-server-dx4r.onrender.com/agreements/${id}`, formData)
       .then(() => navigate('/'))
       .catch(error => console.error(error));
   };

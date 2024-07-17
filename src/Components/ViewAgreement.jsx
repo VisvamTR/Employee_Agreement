@@ -12,7 +12,7 @@ const ViewAgreement = () => {
 
     useEffect(() => {
         // axios.get is help us to get the employee details from the json
-        axios.get(`http://localhost:5000/agreements/${id}`)
+        axios.get(`https://json-server-dx4r.onrender.com/agreements/${id}`)
         .then(response => setAgreement(response.data))
         .catch(error => console.error(error))
     }, [id]);

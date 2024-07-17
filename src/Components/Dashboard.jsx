@@ -18,7 +18,7 @@ const Dashboard = () => {
     //created the arrow function called fetchAgreement
     const fetchAgreement = () => {
         //axios.get is used to get the datas from the json file
-        axios.get('http://localhost:5000/agreements')
+        axios.get('https://json-server-dx4r.onrender.com/agreements')
         .then(response => setAgreements(response.data))
         .catch(error => console.error(error));
     }; 
@@ -28,7 +28,7 @@ const Dashboard = () => {
     const handleDelete = (id) => {
         if (window.confirm("Are you sure want to delete the Agreement")){
         //axios.delete is used to the delete data from the json file.
-        axios.delete(`http://localhost:5000/agreements/${id}`)
+        axios.delete(`https://json-server-dx4r.onrender.com/agreements/${id}`)
         //And then calling the fetchAgreement func. It will help us to show the remaining datas from the json.
         .then(() => fetchAgreement())
         .catch(error => console.error(error));
