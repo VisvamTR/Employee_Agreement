@@ -34,10 +34,6 @@ const Dashboard = () => {
         .catch(error => console.error(error));
     }};
 
-    if (isLoading) {
-        return <p>Showing information may take some time, please be patient...</p>;
-    }
-
     return (
         <div>
             <h1>Employee Agreement Dashboard</h1>
