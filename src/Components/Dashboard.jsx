@@ -26,7 +26,7 @@ const Dashboard = () => {
     //created the function for delete the agreement and whenever we encounter the delete it will show the confirm delete prompt.
     //if we hit enter it will show the confirmation for the delete the particular agreement data
     const handleDelete = (id) => {
-        if (window.confirm("delete")){
+        if (window.confirm("Are you sure want to delete the Agreement")){
         //axios.delete is used to the delete data from the json file.
         axios.delete(`https://json-server-dx4r.onrender.com/agreements/${id}`)
         //And then calling the fetchAgreement func. It will help us to show the remaining datas from the json.
