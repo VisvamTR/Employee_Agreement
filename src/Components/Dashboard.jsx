@@ -9,6 +9,7 @@ const Dashboard = () => {
     
     // created the varible for accessing the json agreenent and setAgreement function for giving functionalities to user datas.
     const [agreements, setAgreements] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     //created the useeffect function inside that calling the fetch agreement function.
     useEffect(() => {
@@ -20,7 +21,16 @@ const Dashboard = () => {
         //axios.get is used to get the datas from the json file
         axios.get('https://json-server-dx4r.onrender.com/agreements')
         .then(response => setAgreements(response.data))
-        .catch(error => console.error(error));
+        .then(agreements => {
+            setAgreements(agreements);
+            setIsLoading(false);
+        })
+        // .catch(error => console.error(error));
+        .catch(error => {
+            console.error(error);
+            setIsLoading(false);
+        });
+
     }; 
 
     //created the function for delete the agreement and whenever we encounter the delete it will show the confirm delete prompt.
@@ -35,7 +45,7 @@ const Dashboard = () => {
     }};
 
     if (isLoading) {
-        return <p>Showing information may take some time, please be patient...</p>;
+        return <p>Viewing data may take few seconds, please be patient...</p>;
     }
 
     return (
